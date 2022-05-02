@@ -6,4 +6,7 @@ class Alien:
         self.y_coordinate = y_coordinate
 
     def hit(self):
-        self.health -= 1
+        if self.health > 0:
+            self.health -= 1
+        else:
+            self.health = None
