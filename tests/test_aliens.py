@@ -16,3 +16,10 @@ def test_alien_hit_reduces_health_by_1():
     a = Alien(2, 0)
     a.hit()
     assert a.health == 2
+
+
+def test_alien_hit_health_is_0():
+    a = Alien(2, 0)
+    a.health = 0
+    a.hit()
+    assert a.health == NameError
