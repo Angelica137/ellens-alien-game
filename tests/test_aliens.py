@@ -7,6 +7,12 @@ def test_alien_has_x_y_coordinates():
     assert a.y_coordinate == 0
 
 
-def test_alien_hhealth_is_3():
+def test_alien_health_is_3():
     a = Alien(2, 0)
     assert a.health == 3
+
+
+def test_alien_hit_reduces_health_by_1():
+    a = Alien(2, 0)
+    a.hit()
+    assert a.health == 2
