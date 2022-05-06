@@ -1,3 +1,6 @@
+from email.base64mime import header_length
+
+
 class Alien:
     health = 3
 
@@ -8,3 +11,6 @@ class Alien:
     def hit(self):
         if self.health > 0:
             self.health -= 1
+
+    def is_alive(self):
+        return self.health > 0
