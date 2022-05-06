@@ -8,5 +8,3 @@ class Alien:
     def hit(self):
         if self.health > 0:
             self.health -= 1
-        else:
-            return u"\U000FE1B3"
