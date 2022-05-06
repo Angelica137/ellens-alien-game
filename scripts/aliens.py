@@ -9,8 +9,16 @@ class Alien:
         self.y_coordinate = y_coordinate
 
     def hit(self):
+        """
+        Reduces alien's health by 1 each time it is hit. 
+        Health does not go below 0
+        """
         if self.health > 0:
             self.health -= 1
 
     def is_alive(self):
+        """
+        Returns true if the alien is alive: health is greater than 0
+        Returns False is alien is dead
+        """
         return self.health > 0
