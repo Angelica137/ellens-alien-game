@@ -34,3 +34,10 @@ def test_is_alive_False():
     a = Alien(0, 0)
     a.health = -1
     assert a.is_alive() == False
+
+
+def test_teleport():
+    a = Alien(0, 0)
+    a.teleports(5, -4)
+    assert a.x_coordinate == 5
+    assert a.y_coordinate == -4
