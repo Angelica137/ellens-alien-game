@@ -28,3 +28,9 @@ def test_alien_hit_health_is_0():
 def test_is_alive_True():
     a = Alien(1, 0)
     assert a.is_alive() == True
+
+
+def test_is_alive_False():
+    a = Alien(0, 0)
+    a.health = -1
+    assert a.is_alive() == False
