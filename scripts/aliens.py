@@ -9,4 +9,4 @@ class Alien:
         if self.health > 0:
             self.health -= 1
         else:
-            self.health = None
+            return u"\U000FE1B3"

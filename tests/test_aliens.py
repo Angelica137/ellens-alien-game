@@ -22,4 +22,5 @@ def test_alien_hit_health_is_0():
     a = Alien(2, 0)
     a.health = 0
     a.hit()
-    assert a.health == None
+    assert a.hit() == u"\U000FE1B3"
+    assert a.health == 0
