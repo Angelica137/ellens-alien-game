@@ -41,3 +41,8 @@ def test_teleport():
     a.teleport(5, -4)
     assert a.x_coordinate == 5
     assert a.y_coordinate == -4
+
+
+def test_total_aliens_created():
+    a_1 = Alien(5, 1)
+    a_1.total_aliens_created() == 1
