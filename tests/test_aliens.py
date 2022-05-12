@@ -45,4 +45,6 @@ def test_teleport():
 
 def test_total_aliens_created():
     a_1 = Alien(5, 1)
-    a_1.total_aliens_created() == 1
+    assert a_1.total_aliens_created() == 8
+    a_2 = Alien(3, 0)
+    assert a_2.total_aliens_created() == 9
