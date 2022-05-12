@@ -42,6 +42,10 @@ class Alien:
         Pass
 
     def total_aliens_created(self):
+        """
+        Returns the total number of instances of an Alien created during 
+        the session
+        """
         return Alien.counter
 
 
