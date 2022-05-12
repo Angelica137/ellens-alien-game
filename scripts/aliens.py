@@ -1,3 +1,4 @@
+from ast import Pass
 from email.base64mime import header_length
 
 
@@ -30,3 +31,10 @@ class Alien:
         """
         self.x_coordinate = x_coordinate
         self.y_coordinate = y_coordinate
+
+    def collision_detection(other_bject):
+        """
+        🔥 You still need to do this
+        Returns True when a collision has occurred
+        """
+        Pass
