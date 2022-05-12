@@ -22,3 +22,11 @@ class Alien:
         Returns False is alien is dead
         """
         return self.health > 0
+
+    def teleport(self, x_coordinate: int, y_coordinate: int):
+        """
+        Changes the location of the alien to the coorinates passes.
+        God knows where these come from
+        """
+        self.x_coordinate = x_coordinate
+        self.y_coordinate = y_coordinate

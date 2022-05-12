@@ -38,6 +38,6 @@ def test_is_alive_False():
 
 def test_teleport():
     a = Alien(0, 0)
-    a.teleports(5, -4)
+    a.teleport(5, -4)
     assert a.x_coordinate == 5
     assert a.y_coordinate == -4
