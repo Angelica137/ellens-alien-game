@@ -47,12 +47,3 @@ class Alien:
         the session
         """
         return Alien.counter
-
-
-"""
-a_1 = Alien(5, 1)
-print(a_1.total_aliens_created())
-a_2 = Alien(3, 0)
-print(a_2.total_aliens_created())
-print(a_1.total_aliens_created())
-"""
