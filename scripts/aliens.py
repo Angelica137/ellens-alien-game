@@ -4,8 +4,10 @@ from email.base64mime import header_length
 
 class Alien:
     health = 3
+    counter = 0
 
     def __init__(self, x_coordinate: int, y_coordinate: int):
+        self.counter += 1
         self.x_coordinate = x_coordinate
         self.y_coordinate = y_coordinate
 
@@ -38,3 +40,6 @@ class Alien:
         Returns True when a collision has occurred
         """
         Pass
+
+    def total_aliens_created(self):
+        return self.counter
