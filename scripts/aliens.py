@@ -50,5 +50,8 @@ class Alien:
 
 
 def new_aliens_collection(locations: list):
+    """
+    Takes a list of coordinate pairs and returns a list of Alien objects
+    """
     aliens = [Alien(location[0], location[1]) for location in locations]
     return aliens
