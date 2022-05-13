@@ -55,3 +55,9 @@ def new_aliens_collection(locations: list):
     """
     aliens = [Alien(location[0], location[1]) for location in locations]
     return aliens
+
+
+"""
+a = [Alien(-2, 6)]
+print(a[0].total_aliens_created())
+"""

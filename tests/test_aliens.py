@@ -44,10 +44,13 @@ def test_teleport():
 
 
 def test_total_aliens_created():
+    Alien.total_aliens_created == 0
     a_1 = Alien(5, 1)
     assert a_1.total_aliens_created() == 8
     a_2 = Alien(3, 0)
     assert a_2.total_aliens_created() == 9
+    a_3 = [Alien(-2, 6)]
+    assert a_3[0].total_aliens_created == 10
 
 
 def test_new_aliens_collection():
