@@ -39,7 +39,7 @@ class Alien:
         🔥 You still need to do this
         Returns True when a collision has occurred
         """
-        Pass
+        pass
 
     def total_aliens_created(self):
         """

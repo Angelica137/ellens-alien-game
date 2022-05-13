@@ -48,3 +48,8 @@ def test_total_aliens_created():
     assert a_1.total_aliens_created() == 8
     a_2 = Alien(3, 0)
     assert a_2.total_aliens_created() == 9
+
+
+def test_new_aliens_collection():
+    locations = [(0, 0), (1, 2)]
+    assert type(new_aliens_collection(locations)[0]) == '__main__.Alien'
