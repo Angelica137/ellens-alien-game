@@ -50,7 +50,5 @@ class Alien:
 
 
 def new_aliens_collection(locations: list):
-    aliens = []
-    for location in locations:
-        aliens.append(Alien(location[0], location[1]))
+    aliens = [Alien(location[0], location[1]) for location in locations]
     return aliens
