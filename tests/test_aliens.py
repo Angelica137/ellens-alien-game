@@ -52,4 +52,5 @@ def test_total_aliens_created():
 
 def test_new_aliens_collection():
     locations = [(0, 0), (1, 2)]
-    assert type(new_aliens_collection(locations)[0]) == '__main__.Alien'
+    assert (new_aliens_collection(locations)[0].x_coordinate) == 0
+    assert (new_aliens_collection(locations)[1].y_coordinate) == 2
