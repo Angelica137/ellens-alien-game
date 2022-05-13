@@ -28,13 +28,13 @@ class Alien:
 
     def teleport(self, x_coordinate: int, y_coordinate: int):
         """
-        Changes the location of the alien to the coorinates passes.
+        Changes the location of the alien to the coordinates passes.
         God knows where these come from
         """
         self.x_coordinate = x_coordinate
         self.y_coordinate = y_coordinate
 
-    def collision_detection(other_bject):
+    def collision_detection(self, other_bject):
         """
         🔥 You still need to do this
         Returns True when a collision has occurred

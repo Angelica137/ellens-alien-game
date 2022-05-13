@@ -50,7 +50,7 @@ def test_total_aliens_created():
     a_2 = Alien(3, 0)
     assert a_2.total_aliens_created() == 9
     a_3 = [Alien(-2, 6)]
-    assert a_3[0].total_aliens_created == 10
+    assert a_3[0].total_aliens_created() == 10
 
 
 def test_new_aliens_collection():
