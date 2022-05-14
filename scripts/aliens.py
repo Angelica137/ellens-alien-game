@@ -1,7 +1,3 @@
-from ast import Pass
-from email.base64mime import header_length
-
-
 class Alien:
     health = 3
     counter = 0
